@@ -1,0 +1,25 @@
+# Environment & Secret files
+.env
+*.env.local
+
+# Build & System outputs
+build/
+.dart_tool/
+.idea/
+.vscode/
+bin/
+obj/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+localmind_nosql.db
+*.apk
+.gradle/
+android/.gradle/
+android/app/build/
+flutter_build/
+
+# Flutter / Android / .NET generated files
+.flutter-plugins
+.flutter-plugins-dependencies
