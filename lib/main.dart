@@ -4,8 +4,14 @@ import 'providers/chat_provider.dart';
 import 'providers/settings_provider.dart';
 import 'ui/screens/chat_screen.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Catch any unhandled Flutter framework errors on physical devices
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details);
+  };
+
   runApp(const LocalMindApp());
 }
 
